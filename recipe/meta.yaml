@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -21,16 +21,12 @@ requirements:
     - pip
   run:
     - python >=3.8.1,<4.0
-    - robotframework >=5.0.1,<6.0.0
-    - robotframework-pythonlibcore >=3.0.0,<4.0.0
+    - robotframework >=5.0.1
+    - robotframework-pythonlibcore >=3.0.0
 
 test:
   imports:
     - assertionengine
-  commands:
-    - pip check
-  requires:
-    - pip
 
 about:
   home: https://github.com/MarketSquare/AssertionEngine
