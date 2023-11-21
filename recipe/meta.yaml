@@ -1,5 +1,5 @@
 {% set name = "robotframework-assertion-engine" %}
-{% set version = "3.0.2" %}
+{% set version = "3.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/robotframework_assertion_engine-{{ version }}.tar.gz
-  sha256: e79cee7080c0cb08bb405ddae854dac9c9120110240dd4adbf2a38b3f21d70ee
+  sha256: 1c608d4c69d96520986a1ddc6def0fc7f7e849520f1e6882a633b51dbb98fd88
 
 build:
   noarch: python
